@@ -696,11 +696,15 @@ body {
   .hero-art {
     order: -1;
     margin-bottom: 34px;
+    width: 100%;
+    overflow: hidden;
   }
 
   .hero-art img {
-    min-width: 490px;
-    transform: translateX(40px);
+    width: min(500px, 145%);
+    min-width: 0;
+    max-width: none;
+    transform: translateX(16%);
   }
 
   .hero-copy p {
@@ -808,8 +812,22 @@ body {
     width: calc(100% - 48px);
   }
 
+  .hero {
+    padding: 30px 0 150px;
+  }
+
+  .hero-art img {
+    width: 140%;
+    transform: translateX(12%);
+  }
+
   .hero-copy h1 {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
+    letter-spacing: -1px;
+  }
+
+  .hero-copy p {
+    font-size: 1rem;
   }
 }
 </style>
